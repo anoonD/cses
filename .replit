@@ -1,4 +1,4 @@
-run = "cowsay Welcome to Nix on Replit!"
+run = "bash compile.sh 007"
 
 [nix]
 channel = "stable-21_11"

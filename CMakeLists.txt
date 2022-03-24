@@ -3,6 +3,7 @@ project(cses)
 
 set(CMAKE_CXX_FLAGS "${CMAME_CXX_FLAGS} -Wall")
 set(CMAKE_CXX_STANDARD 20)
+set(source_dir src)
 
 add_executable(001 ${source_dir}/001-weirdAlgorithm.cpp)
 add_executable(002 ${source_dir}/002-missingNumber.cpp)
@@ -10,3 +11,4 @@ add_executable(003 ${source_dir}/003-repetitions.cpp)
 add_executable(004 ${source_dir}/004-increasingArray.cpp)
 add_executable(005 ${source_dir}/005-permutations.cpp)
 add_executable(006 ${source_dir}/006-numberSpiral.cpp)
+add_executable(007 ${source_dir}/007-twoKnights.cpp)
