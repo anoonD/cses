@@ -5,3 +5,5 @@ compile.sh
 replit.nix
 .replit
 build/*
+.idea/
+cmake-build-debug
