@@ -1,0 +1,7 @@
+build
+.cache
+compile.sh
+.config
+replit.nix
+.replit
+build/*
