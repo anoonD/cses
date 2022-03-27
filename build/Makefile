@@ -182,6 +182,19 @@ depend:
 .PHONY : 002/fast
 
 #=============================================================================
+# Target rules for targets named 008
+
+# Build rule for target.
+008: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 008
+.PHONY : 008
+
+# fast build rule for target.
+008/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/008.dir/build.make CMakeFiles/008.dir/build
+.PHONY : 008/fast
+
+#=============================================================================
 # Target rules for targets named 003
 
 # Build rule for target.
@@ -375,6 +388,30 @@ src/007-twoKnights.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/007.dir/build.make CMakeFiles/007.dir/src/007-twoKnights.cpp.s
 .PHONY : src/007-twoKnights.cpp.s
 
+src/008-twoSets.o: src/008-twoSets.cpp.o
+.PHONY : src/008-twoSets.o
+
+# target to build an object file
+src/008-twoSets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/008.dir/build.make CMakeFiles/008.dir/src/008-twoSets.cpp.o
+.PHONY : src/008-twoSets.cpp.o
+
+src/008-twoSets.i: src/008-twoSets.cpp.i
+.PHONY : src/008-twoSets.i
+
+# target to preprocess a source file
+src/008-twoSets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/008.dir/build.make CMakeFiles/008.dir/src/008-twoSets.cpp.i
+.PHONY : src/008-twoSets.cpp.i
+
+src/008-twoSets.s: src/008-twoSets.cpp.s
+.PHONY : src/008-twoSets.s
+
+# target to generate assembly for a file
+src/008-twoSets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/008.dir/build.make CMakeFiles/008.dir/src/008-twoSets.cpp.s
+.PHONY : src/008-twoSets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -390,6 +427,7 @@ help:
 	@echo "... 005"
 	@echo "... 006"
 	@echo "... 007"
+	@echo "... 008"
 	@echo "... src/001-weirdAlgorithm.o"
 	@echo "... src/001-weirdAlgorithm.i"
 	@echo "... src/001-weirdAlgorithm.s"
@@ -411,6 +449,9 @@ help:
 	@echo "... src/007-twoKnights.o"
 	@echo "... src/007-twoKnights.i"
 	@echo "... src/007-twoKnights.s"
+	@echo "... src/008-twoSets.o"
+	@echo "... src/008-twoSets.i"
+	@echo "... src/008-twoSets.s"
 .PHONY : help
 
 
